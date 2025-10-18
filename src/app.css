@@ -1,1 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+@import url('https://fonts.cdnfonts.com/css/albert-sans');
 @import 'tailwindcss';
+
+@theme {
+    --color-esiblue: #0a6791;
+    --color-esiorange: #f04e23;
+    --color-esigreen: #527267;
+
+    --font-dmsans: "DM Sans", sans-serif;
+    --font-outfit: "Outfit", sans-serif;
+    --font-avenir: "Avenir", sans-serif;
+    --font-albert: "Albert Sans", sans-serif;
+    --font-jakarta: "Plus Jakarta Sans", sans-serif;
+
+    --default-font-family: "Outfit", sans-serif;
+}

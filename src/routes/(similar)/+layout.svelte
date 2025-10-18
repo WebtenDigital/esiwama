@@ -1,8 +1,7 @@
 <script lang="ts">
-	import '../app.css';
+	import '../../app.css';
 	import favicon from '$lib/assets/favicon.svg';
     import Menu from '$lib/components/Menu.svelte';
-    import Footer from '$lib/components/Footer.svelte';
 	
 	let { children } = $props();
 </script>
@@ -11,10 +10,9 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<!-- <div class="w-10/12 mx-auto pt-8">
-	<Menu logotype="logobw"/>
-</div> -->
+<!-- MENU -->
+<div class="w-11/12 mx-auto pt-8 lg:w-10/12"><Menu/></div>
 
 {@render children?.()}
 
-<Footer/>
+<!-- FOOTER -->

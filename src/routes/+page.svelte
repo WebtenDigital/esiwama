@@ -1,19 +1,17 @@
 <script lang="ts">
     import Menu from "$lib/components/Menu.svelte";
+    import Heading from "$lib/components/Heading.svelte";
+    import CTA from "$lib/components/CTA.svelte";
+    
     import esiwamalogo from "$lib/assets/esiwama-logo-colored.png"
     import heroimg from "$lib/assets/heroimg.webp"
     import leaf from "$lib/assets/leaf.png"
     import ctahandshake from "$lib/assets/cta-handshake.png"
-
     import business from "$lib/assets/handshake.png"
     import building from "$lib/assets/infrastructure.jpg"
     import lake from "$lib/assets/lake.webp"
     import meeting from "$lib/assets/meeting trees.jpg"
     import water from "$lib/assets/water-correction.jpg"
-
-    import Heading from "$lib/components/Heading.svelte";
-    import CTA from "$lib/components/CTA.svelte";
-    import Footer from "$lib/components/Footer.svelte";
 
     const herocards = [
         {

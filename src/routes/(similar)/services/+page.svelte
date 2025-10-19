@@ -6,6 +6,9 @@
     import economic from "$lib/assets/meeting trees.jpg"
     import water from "$lib/assets/water.webp"
     import leaf from "$lib/assets/leaf.png"
+    import ctahandshake from "$lib/assets/cta-handshake.png"
+
+
     import CTA from "$lib/components/CTA.svelte";
 
     const services=[
@@ -57,9 +60,9 @@
 <main class="text-gray-600 lg:text-lg">
     <div id="page holder" class="w-11/12 mx-auto lg:w-10/12">
         <Hero text="Services"/>
-        <p class="w-10/12 mx-auto">At ESIWAMA, we provide a comprehensive suite of consulting services tailored to the diverse needs of clients across multiple sectors. Our multidisciplinary team integrates business advisory, infrastructure development, environmental management, and socio-economic expertise to deliver solutions that are practical, sustainable, and impactful.</p>
+        <p class="lg:w-10/12 mx-auto">At ESIWAMA, we provide a comprehensive suite of consulting services tailored to the diverse needs of clients across multiple sectors. Our multidisciplinary team integrates business advisory, infrastructure development, environmental management, and socio-economic expertise to deliver solutions that are practical, sustainable, and impactful.</p>
         
-        <section class="lg:hidden">
+        <section class="py-10 lg:hidden">
             {#each services as serviceitem}
             <div class="grid grid-cols-4 gap-x-8 py-8">
                 <div id="icon" class="h-16 w-16 fill-esigreen" bind:innerHTML={serviceitem.icon} contenteditable="false"></div>
@@ -116,4 +119,21 @@
             {/each}
         </section>
     </div>
+    
+    <!-- CTA -->
+    <section class="bg-esigreen text-white">
+        <div id="holder" class="w-10/12 mx-auto py-8 lg:grid lg:grid-cols-2 lg:gap-x-20">
+            <div class=""><img src={ctahandshake} alt="handshake" class="rounded-4xl"></div>
+            
+            <div id="lg-right" class="lg:w-10/12">
+                <div class="py-2"></div>
+                <h3 class="text-2xl lg:text-4xl font-dmsans font-bold">Partner With Us</h3>
+                <!-- <Heading text="Partner With Us"/> -->
+                <h4 class="text-lg lg:py-2">Ready to build a lasting impact?</h4>
+                <p class="py-5 lg:py-8">ESIWAMA is your trusted partner for sustainable solutions that drive progress and create value.</p>
+                <CTA url="/contact" text="get in touch" bgcolor="white" textcolor="esiorange"/>
+            </div>
+        </div>
+
+    </section>
     </main>

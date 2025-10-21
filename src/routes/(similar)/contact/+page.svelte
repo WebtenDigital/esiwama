@@ -5,6 +5,11 @@
     import businesswoman from "$lib/assets/contact woman - edited.png"
     import businesswomanfull from "$lib/assets/contact woman - orig.png"
     import texting from "$lib/assets/texting.png"
+
+    import { PUBLIC_WHATSAPPNUMBER } from '$env/static/public';
+
+    const whatsappnumber = PUBLIC_WHATSAPPNUMBER;
+
 </script>
 
 <main class="text-gray-600 lg:text-lg">
@@ -14,7 +19,7 @@
         <p class="lg:text-center">Ready to build lasting impact? ESIWAMA is your trusted partner for sustainable solutions that drive progress and create value.</p>
 
         <!-- Contacts -->
-        <div class="relative w-10/12 my-8 py-8 text-white bg-esiblue rounded-4xl lg:w-8/12 lg:py-12">
+        <div class="relative w-10/12 my-8 py-8 text-white bg-esiblue rounded-4xl lg:w-8/12 lg:py-12 shadow-xl" data-aos="fade-up" data-aos-duration="1000">
             <div class="w-10/12 mx-auto">
                 <p class="pb-4 lg:font-semibold lg:text-3xl">Get in touch with us</p>
                 <div class="lg:py-4"></div>
@@ -34,17 +39,17 @@
                 </div>
             </div>
 
-            <div class="absolute -right-[20%] -bottom-[12%] lg:-right-[38%]"><img src={businessman} alt="man on phone" class="h-[250px] rounded-4xl lg:h-[400px] lg:w-[400px] object-cover"></div>
+            <div class="absolute -right-[20%] -bottom-[12%] lg:-right-[38%]"><img src={businessman} alt="man on phone" class="h-[250px] rounded-4xl lg:h-[400px] lg:w-[400px] object-cover shadow-xl lg:shadow-2xl"></div>
         </div>
         
         <div class="py-8 lg:py-0"></div>
 
         <!-- WhatsApp -->
-        <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:my-40">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 lg:my-40" data-aos="fade-up" data-aos-duration="1000">
             <div class="hidden lg:block"><img src={texting} alt="man texting" class="h-80 w-full object-cover rounded-4xl"></div>
 
             <section class="text-white">
-                <div class="py-1 bg-esiblue rounded-[32px] lg:py-2">
+                <div class="py-1 bg-esiblue rounded-[32px] lg:py-2 shadow-xl">
                     <div class="py-8 w-10/12 mx-auto grid grid-cols-2 gap-x-2 items-center lg:py-20">
                         <p class="">Send a mesage on</p>
                         <div class="">
@@ -52,7 +57,7 @@
                         </div>
                     </div>
 
-                    <a href="https://wa.me/+256700778449" aria-label="true" target="_blank" class="flex justify-between mx-2 px-4 py-5 bg-white text-[#25d366] rounded-[24px] lg:py-8 lg:px-8">
+                    <a href={`https://wa.me/${whatsappnumber}`} aria-label="true" target="_blank" class="flex justify-between mx-2 px-4 py-5 bg-white text-[#25d366] rounded-[24px] lg:py-8 lg:px-8">
                         <p>Send Message</p>
                         <div class="block">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="size-6 text-[#25d366]">
@@ -65,14 +70,14 @@
         </div>
 
         <!-- Send Email -->
-        <section class="relative pt-24 lg:pt-0 lg:flex">
+        <section class="relative pt-24 lg:pt-0 lg:flex" data-aos="fade-up" data-aos-duration="1000">
             
             <div class="lg:hidden"><img src={businesswoman} alt="woman with turban" class="-my-4 w-full h-40 object-cover rounded-4xl"></div>
             
-            <div class="hidden lg:block absolute top-[10%] left-[2%]"><img src={businesswomanfull} alt="woman with turban" class="object-cover rounded-4xl"></div>
+            <div class="hidden lg:block absolute top-[10%] left-[2%]"><img src={businesswomanfull} alt="woman with turban" class="object-cover rounded-4xl shadow-xl lg:shadow-2xl"></div>
 
             <div class="lg:w-3/12"></div>
-            <div class="py-4 bg-esiblue text-white rounded-4xl lg:w-9/12 lg:grid lg:grid-cols-3 lg:py-12">
+            <div class="py-4 bg-esiblue text-white rounded-4xl lg:w-9/12 lg:grid lg:grid-cols-3 lg:py-12 shadow-xl lg:shadow-2xl">
                 <div class=""></div>
                 <div class="w-11/12 mx-auto lg:col-span-2 lg:w-10/12">
                     <p class="px-2 py-6">Send us an email</p>

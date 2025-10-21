@@ -6,6 +6,13 @@
 @font-face {
     font-family: "Monument";
     src: url("$lib/fonts/MonumentExtended-Regular.woff") format("woff");
+
+    font-family: "Avenir Next";
+    src: url("$lib/fonts/Avenir Next LT W02 Regular.woff") format("woff");
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @theme {
@@ -19,6 +26,7 @@
     --font-albert: "Albert Sans", sans-serif;
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
     --font-monument: "Monument", sans-serif;
+    --font-avenirnext: "Avenir Next", sans-serif;
 
     --default-font-family: "Outfit", sans-serif;
 }

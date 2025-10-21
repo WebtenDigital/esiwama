@@ -71,9 +71,9 @@
             </div>
 
             <div id="cards-holder" class="relative">
-                <div class=""><img src={heroimg} alt="environment" class="h-[600px] w-full object-cover rounded-4xl"></div>
+                <div class=""><img src={heroimg} alt="environment" class="h-[600px] w-full object-cover rounded-4xl shadow-xl lg:shadow-3xl"></div>
 
-                <div class="absolute top-[10%] right-[5%] w-4/12 mx-auto py-8 bg-white shadow-lg rounded-4xl">
+                <div class="absolute top-[10%] right-[5%] w-4/12 mx-auto py-8 bg-white rounded-4xl shadow-xl lg:shadow-3xl">
                     <div id="holder" class="w-10/12 mx-auto">
                         <h2 class="text-esiorange text-xl font-semibold ">Who We Are</h2>
                         <p class="pt-4 pb-8">We combine advisory insight with technical excellence to plan, design, and deliver solutions that strengthen infrastructure, support communities, and drive sustainable development.</p>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <div class="px-[5%] absolute top-3/4 flex items-center justify-between space-x-8">
+                <div class="px-[5%] absolute top-3/4 flex items-center justify-between space-x-8" data-aos="fade-up" data-aos-duration="500">
                     {#each herocards as carditem}
                         <div class="py-8 text-white bg-esiorange rounded-4xl">
                             <div id="holder" class="w-10/12 mx-auto">
@@ -111,8 +111,8 @@
             <div class="">
                 <p class="py-2 text-xl text-center text-esiblue font-semibold">Engineering Sustainable Solutions, <br>Empowering Communities</p>
                 
-                <div id="" class="relative font-albert">
-                <div class="py-2"><img src={heroimg} alt="environment" class="rounded-4xl"></div>
+                <div id="" class="relative">
+                <div class="py-2" data-aos="fade-down" data-aos-duration="1000"><img src={heroimg} alt="environment" class="rounded-4xl shadow-xl lg:shadow-3xl"></div>
                 <div class="absolute top-28 inset-x-0 w-11/12 mx-auto py-4 bg-white shadow-lg rounded-4xl">
                     <div id="holder" class="w-10/12 mx-auto">
                         <h2 class="text-esiorange text-lg font-semibold ">Who We Are</h2>
@@ -139,7 +139,7 @@
         <!-- cards for mobile -->
          <div class="lg:hidden">
             {#each herocards as carditem}
-                <div class="my-4 py-8 text-white bg-esiorange rounded-4xl">
+                <div class="my-4 py-8 text-white bg-esiorange rounded-4xl shadow-xl lg:shadow-3xl" data-aos="fade up" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div id="holder" class="w-10/12 mx-auto">
                         <h2 class="text-md font-semibold font-outfit uppercase">{carditem.title}</h2>
                         <p class="pt-2">{carditem.details}</p>
@@ -155,8 +155,8 @@
           
             <div class="lg:py-4 lg:grid lg:grid-cols-2 lg:gap-x-16">
                 {#each expertisecards as carditem}
-                    <div id="card" class="py-5 flex items-start space-x-4 lg:py-8">
-                        <div id="cardimage" class="w-5/12 lg:w-6/12"><img src={carditem.imgurl} alt={carditem.title} class="w-full h-36 object-cover rounded-4xl lg:h-40"></div>
+                    <div id="card" class="py-5 flex items-start space-x-4 lg:py-8" data-aos="fade-right" data-aos-duration="1000">
+                        <div id="cardimage" class="w-5/12 lg:w-6/12"><img src={carditem.imgurl} alt={carditem.title} class="w-full h-36 object-cover rounded-4xl lg:h-40 shadow-xl lg:shadow-3xl"></div>
                         <div class="w-6/12">
                             <div class="flex items-center space-x-2">
                                 <h3 class="text-sm font-bold font-dmsans lg:text-base">{carditem.title}</h3>

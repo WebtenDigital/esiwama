@@ -64,14 +64,14 @@
         
         <section class="py-10 lg:hidden">
             {#each services as serviceitem}
-            <div class="grid grid-cols-4 gap-x-8 py-8">
+            <div class="grid grid-cols-4 gap-x-8 py-8" data-aos="fade-up" data-aos-duration="1000">
                 <div id="icon" class="h-16 w-16 fill-esigreen" bind:innerHTML={serviceitem.icon} contenteditable="false"></div>
                 
                 <div class="col-span-3">
                     <h2 class="font-bold">{serviceitem.title}</h2>
                     <p class="py-2">{serviceitem.description}</p>
-                    <div class="py-4"><img src={serviceitem.imageurl} alt={serviceitem.title} class="h-36 w-full rounded-2xl"></div>
-                    <div class="bg-esigreen text-white text-sm rounded-3xl">
+                    <div class="py-4"><img src={serviceitem.imageurl} alt={serviceitem.title} class="h-36 w-full rounded-2xl shadow-xl lg:shadow-2xl"></div>
+                    <div class="bg-esigreen text-white text-sm rounded-3xl shadow-xl lg:shadow-4xl">
                         <div class="w-10/12 mx-auto py-4">
                             <h3>DETAILS</h3>
                             <div class="">
@@ -90,7 +90,7 @@
         <!-- for lg -->
         <section class="hidden lg:block py-20">
             {#each services as serviceitem}
-                <div class="py-8 grid grid-cols-4 gap-x-4">
+                <div class="py-8 grid grid-cols-4 gap-x-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class=" ">
                         <div class="flex items-start justify-between space-x-4">
                             <div id="icon" class="h-20 w-20 fill-esigreen" bind:innerHTML={serviceitem.icon} contenteditable="false"></div>
@@ -101,13 +101,13 @@
                         {#if serviceitem.extra=="icon"}
                             <div class="pt-4"><img src={leaf} alt="leaf icon" class="h-20"></div>
                             {:else if serviceitem.extra=="cta"}
-                            <div class="pt-4"><CTA text="get in touch" bgcolor="esiorange" textcolor="white"/></div>
+                            <div class="pt-4"><CTA url="/contact" text="get in touch" bgcolor="esiorange" textcolor="white"/></div>
                         {/if}
                     </div>
                     
-                    <div class=""><img src={serviceitem.imageurl} alt={serviceitem.title} class="h-full object-cover rounded-4xl"></div>
+                    <div class=""><img src={serviceitem.imageurl} alt={serviceitem.title} class="h-full object-cover rounded-4xl shadow-xl lg:shadow-4xl"></div>
                     
-                    <div id="details" class="col-span-2 py-8 text-white bg-esigreen rounded-4xl">
+                    <div id="details" class="col-span-2 py-8 text-white bg-esigreen rounded-4xl shadow-lg lg:shadow-4xl">
                         <p class="w-10/12 mx-auto font-semibold">DETAILS</p>
                         <div class="w-10/12 mx-auto grid grid-cols-2 gap-x-8">
                             {#each serviceitem.details as detail}

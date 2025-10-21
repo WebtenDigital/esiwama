@@ -19,9 +19,9 @@
 
         <section class="lg:grid lg:grid-cols-2 lg:gap-x-12">
             <div id="lg-left">
-                <div class=""><img src={arch} alt="architectural design" class="rounded-4xl lg:"></div>
+                <div class=""><img src={arch} alt="architectural design" class="rounded-4xl shadow-xl lg:shadow-3xl"></div>
                 <div class="hidden lg:block pt-4">
-                    <div class="py-2 w-2/12 mx-auto"><img src={leaf} alt="leaf icon"></div>
+                    <div class="py-2 w-2/12 mx-auto"><img src={leaf} alt="leaf icon" class="animate-pulse"></div>
                     <CTA url="/services" bgcolor="esiorange" text="our services" textcolor="white"/>
                 </div>
             </div>
@@ -32,6 +32,7 @@
                     Our commitment is to deliver solutions that not only meet today’s needs but also create opportunities for future generations. By integrating engineering precision with a deep understanding of social systems, we ensure every project leaves a lasting positive footprint.
                 </p>
                 
+                <div class="" data-aos="fade-up" data-aos-duration="1000">
                 <div class="lg:pt-8">
                     <Heading text="Our Mission" color="esiorange"/>
                 </div>
@@ -48,15 +49,16 @@
                     <CTA url="/services" bgcolor="esiorange" text="our services" textcolor="white"/>
                 </div>
             </div>
+            </div>
         </section>
         
 
-        <section class="py-24 lg:py-16">
+        <section class="py-24 lg:py-16" data-aos="fade-up" data-aos-duration="1000">
             <div class="lg:hidden"><img src={cows} alt="cows drinking from well" class="rounded-3xl"></div>
             <div class="py-4"></div>
             
             <!-- <div class="lg:text-center"><Heading text="More About Us" color="esiorange"/></div> -->
-            <h2 class="text-5xl text-center text-esiorange font-dmsans font-extrabold">More About Us</h2>
+            <h2 class="text-3xl text-left lg:text-5xl lg:text-center text-esiorange font-dmsans font-extrabold">More About Us</h2>
             <div id="separator" class="lg:py-4"></div>
             <div id="holder" class="lg:grid lg:grid-cols-4 lg:gap-x-10">
                 <section class="hidden lg:block"><img class="h-full object-cover rounded-4xl" src={meeting} alt="field meeting"></section>
@@ -70,7 +72,8 @@
             </div>
         </section>
 
-        <section class="lg:py-16">
+        <!-- CTA -->
+        <section class="lg:py-16" data-aos="fade-up" data-aos-duration="1000">
             <div class="lg:grid lg:grid-cols-2 lg:gap-x-8">
                 <div class=""><img src={ctahandshake} alt="handshake" class="rounded-4xl"></div>
                 <div class="mt-2 lg:py-4 text-white bg-esiorange rounded-3xl">

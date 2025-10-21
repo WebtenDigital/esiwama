@@ -93,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="px-[5%] absolute top-3/4 flex items-center justify-between space-x-8" data-aos="fade-up" data-aos-duration="500">
+                <div class="px-[5%] absolute top-3/4 flex items-center justify-between space-x-8">
                     {#each herocards as carditem}
                         <div class="py-8 text-white bg-esiorange rounded-4xl">
                             <div id="holder" class="w-10/12 mx-auto">
@@ -158,7 +158,7 @@
           
             <div class="lg:py-4 lg:grid lg:grid-cols-2 lg:gap-x-16">
                 {#each expertisecards as carditem}
-                    <div id="card" class="py-5 flex items-start space-x-4 lg:py-8" data-aos="fade-right" data-aos-duration="1000">
+                    <div id="card" class="py-5 flex items-start space-x-4 lg:py-8">
                         <div id="cardimage" class="w-5/12 lg:w-6/12"><img src={carditem.imgurl} alt={carditem.title} class="w-full h-36 object-cover rounded-4xl lg:h-40 shadow-xl lg:shadow-3xl"></div>
                         <div class="w-6/12">
                             <div class="flex items-center space-x-2">

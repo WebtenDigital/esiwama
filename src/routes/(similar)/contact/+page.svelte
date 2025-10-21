@@ -7,10 +7,13 @@
     import texting from "$lib/assets/texting.png"
 
     import { PUBLIC_WHATSAPPNUMBER } from '$env/static/public';
+    import Seo from "$lib/components/Seo.svelte";
 
     const whatsappnumber = PUBLIC_WHATSAPPNUMBER;
 
 </script>
+
+<Seo title="Contact Us" description="Ready to build a lasting impact? ESIWAMA is your trusted partner for sustainable solutions that drive progress and create value."/>
 
 <main class="text-gray-600 lg:text-lg">
     <div id="page holder" class="w-11/12 mx-auto pb-20 lg:w-10/12">
@@ -57,10 +60,10 @@
                         </div>
                     </div>
 
-                    <a href={`https://wa.me/${whatsappnumber}`} aria-label="true" target="_blank" class="flex justify-between mx-2 px-4 py-5 bg-white text-[#25d366] rounded-[24px] lg:py-8 lg:px-8">
+                    <a href={`https://wa.me/${whatsappnumber}`} aria-label="true" target="_blank" class="flex justify-between mx-2 px-4 py-5 bg-white text-[#25d366] rounded-[24px] hover:bg-[#25d366] hover:text-white lg:py-8 lg:px-8">
                         <p>Send Message</p>
                         <div class="block">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="size-6 text-[#25d366]">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.0" stroke="currentColor" class="size-6 ">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </div>
@@ -87,7 +90,7 @@
                         <div class="py-4"></div>
                         <textarea name="message" id="" rows="10" placeholder="Type your message here..." class="w-full pt-8 px-4 text-gray-700 bg-white rounded-4xl focus:outline-none"></textarea>
                         <div class="py-2"></div>
-                        <button type="submit" class="block w-full py-3 bg-white text-esiblue text-center uppercase rounded-2xl cursor-pointer">Submit</button>
+                        <button type="submit" class="block w-full py-3 bg-white text-esiblue text-center uppercase rounded-2xl cursor-pointer hover:text-white hover:bg-blue-400">Submit</button>
                     </form>
                 </div>
             </div>

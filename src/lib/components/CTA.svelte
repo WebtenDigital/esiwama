@@ -3,7 +3,7 @@
 </script>
 
 <div class="">
-    <a href={props.url} class={`block w-full px-4 py-3 text-white bg-${props.bgcolor?props.bgcolor:"esiblue"} rounded-xl uppercase`}>
+    <a href={props.url} class={`block w-full px-4 py-3 text-white bg-${props.bgcolor?props.bgcolor:"esiblue"} rounded-xl uppercase ${props.bgcolor=="esiblue"?"hover:bg-esiorange":props.bgcolor=="white"?"text-white bg-esiorange":"hover:bg-esiblue"}`}>
         <div class="flex justify-between items-center">
             <p class={`text-${props.textcolor?props.textcolor:""} font-dmsans font-bold`}>{props.text}</p>
             <div class="">

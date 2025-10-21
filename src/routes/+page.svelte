@@ -2,6 +2,7 @@
     import Menu from "$lib/components/Menu.svelte";
     import Heading from "$lib/components/Heading.svelte";
     import CTA from "$lib/components/CTA.svelte";
+    import Seo from "$lib/components/Seo.svelte";
     
     import esiwamalogo from "$lib/assets/esiwama-logo-colored.png"
     import heroimg from "$lib/assets/heroimg.webp"
@@ -58,6 +59,8 @@
 
 </script>
 
+<Seo title="Home" description="Engineering Sustainable Solutions, Empowering Communities; we combine advisory insight with technical excellence to plan, design, and deliver solutions that strengthen infrastructure, support communities, and drive sustainable development."/>
+
 <main class="text-gray-600 lg:text-lg">
     <div class="w-11/12 mx-auto pt-8 lg:w-10/12"><Menu logotype="logoblack"/></div>
     
@@ -77,7 +80,7 @@
                     <div id="holder" class="w-10/12 mx-auto">
                         <h2 class="text-esiorange text-xl font-semibold ">Who We Are</h2>
                         <p class="pt-4 pb-8">We combine advisory insight with technical excellence to plan, design, and deliver solutions that strengthen infrastructure, support communities, and drive sustainable development.</p>
-                        <a href="/about" class="block w-full px-4 py-2 text-white bg-esiblue rounded-xl uppercase">
+                        <a href="/about" class="block w-full px-4 py-2 text-white bg-esiblue hover:bg-esiorange rounded-xl uppercase">
                             <div class="flex justify-between items-center">
                                 <p class="font-dmsans font-bold">About Us</p>
                                 <div class="">
@@ -139,7 +142,7 @@
         <!-- cards for mobile -->
          <div class="lg:hidden">
             {#each herocards as carditem}
-                <div class="my-4 py-8 text-white bg-esiorange rounded-4xl shadow-xl lg:shadow-3xl" data-aos="fade up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <div class="my-4 py-8 text-white bg-esiorange rounded-4xl shadow-xl lg:shadow-3xl" >
                     <div id="holder" class="w-10/12 mx-auto">
                         <h2 class="text-md font-semibold font-outfit uppercase">{carditem.title}</h2>
                         <p class="pt-2">{carditem.details}</p>
@@ -173,7 +176,7 @@
                 
                 <div class="hidden lg:block">
                     <div class="pb-4 pt-10"><img src={leaf} alt="leaf icon" class="h-20"></div>
-                <CTA url="/services" text="our services"/>
+                <CTA url="/services" text="our services" bgcolor="esiblue"/>
                 </div>
             </div>
             

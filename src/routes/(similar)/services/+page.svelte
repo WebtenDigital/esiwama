@@ -10,6 +10,7 @@
 
 
     import CTA from "$lib/components/CTA.svelte";
+    import Seo from "$lib/components/Seo.svelte";
 
     const services=[
         {
@@ -53,9 +54,9 @@
             extra: "cta" 
         }
     ]
-
-    
 </script>
+
+<Seo title="Our Services" description="At ESIWAMA, we provide a comprehensive suite of consulting services tailored to the diverse needs of clients across multiple sectors."/>
 
 <main class="text-gray-600 lg:text-lg">
     <div id="page holder" class="w-11/12 mx-auto lg:w-10/12">

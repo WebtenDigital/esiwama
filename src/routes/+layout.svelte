@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/esi-favicon.png';
+	import lake from "$lib/assets/lake.webp";
 	import whatsappdisplay from "$lib/assets/whatsappbot.png"
     import Footer from '$lib/components/Footer.svelte';
     import { onMount } from 'svelte';
@@ -52,6 +53,16 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<meta property="og:image" content={lake}>
+    <meta property="og:url" content="https://esiwamagroup.com">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Esiwama Group",
+            "url": "https://esiwamagroup.com",
+        }
+    </script>
 </svelte:head>
 
 

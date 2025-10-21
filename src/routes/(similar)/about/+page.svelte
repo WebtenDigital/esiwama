@@ -8,10 +8,10 @@
     import cows from "$lib/assets/cows.jpg"
     import meeting from "$lib/assets/meeting - 2.jpg"
     import ctahandshake from "$lib/assets/cta-handshake.png"
-
-
-
+    import Seo from "$lib/components/Seo.svelte";
 </script>
+
+<Seo title="About Us" description="ESIWAMA is registered and headquartered in Kampala City, Uganda. Since our establishment in 2023, we have built a reputation for delivering high-quality, innovative, and sustainable solutions across a broad spectrum of sectors."/>
 
 <main class="text-gray-600 lg:text-lg">
     <div id="page holder" class="w-11/12 mx-auto lg:w-10/12">

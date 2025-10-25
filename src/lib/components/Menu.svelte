@@ -1,6 +1,6 @@
 <script lang="ts">
     import logocolored from "$lib/assets/esiwama-logo-colored.png"
-    import logoblack from "$lib/assets/esiwama-logo-bw.png"
+    import logoblack from "$lib/assets/logo-gray.png"
     import logowhite from "$lib/assets/esiwama-white.png"
     import { PUBLIC_WHATSAPPNUMBER } from "$env/static/public";
 
@@ -94,7 +94,7 @@
     <!-- LG MENU -->
     <section class="hidden lg:block">
         <nav class="flex items-center justify-between">
-            <div class="w-36">
+            <div class="w-72">
                 <a href="/"><img src={props.logotype=="logoblack"?logoblack:props.logotype=="logowhite"?logowhite:logocolored} alt={props.logotype=="logobw"?"Esiwama Logo B/W":"Esiwama Logo Colored"}></a>
             </div>
             

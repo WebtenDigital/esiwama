@@ -158,20 +158,22 @@
           
             <div class="lg:py-4 lg:grid lg:grid-cols-2 lg:gap-x-16">
                 {#each expertisecards as carditem}
-                    <div id="card" class="py-5 flex items-start space-x-4 lg:py-8">
-                        <div id="cardimage" class="w-5/12 lg:w-6/12"><img src={carditem.imgurl} alt={carditem.title} class="w-full h-36 object-cover rounded-4xl lg:h-40 shadow-xl lg:shadow-3xl"></div>
-                        <div class="w-6/12">
-                            <div class="flex items-center space-x-2">
-                                <h3 class="text-sm font-bold font-dmsans lg:text-base">{carditem.title}</h3>
-                                <div id="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-4 text-esiorange">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                    </svg>
+                    <a href="/services">
+                        <div id="card" class="py-5 flex items-start space-x-4 lg:py-8">
+                            <div id="cardimage" class="w-5/12 lg:w-6/12"><img src={carditem.imgurl} alt={carditem.title} class="w-full h-36 object-cover rounded-4xl lg:h-40 shadow-xl lg:shadow-3xl"></div>
+                            <div class="w-6/12">
+                                <div class="flex items-center space-x-2">
+                                    <h3 class="text-sm font-bold font-dmsans lg:text-base">{carditem.title}</h3>
+                                    <div id="arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-4 text-esiorange">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                        </svg>
+                                    </div>
                                 </div>
+                                <p class="pt-2">{carditem.description}</p>
                             </div>
-                            <p class="pt-2">{carditem.description}</p>
                         </div>
-                    </div>
+                    </a>
                 {/each}
                 
                 <div class="hidden lg:block">

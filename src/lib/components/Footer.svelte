@@ -26,7 +26,7 @@
 
 </script>
 
-<footer class="py-4 lg:py-8 bg-black text-white lg:text-lg">
+<footer class="py-4 lg:py-8 bg-[#fffef8] text-gray-700 lg:text-lg">
     <div class="w-10/12 mx-auto grid grid-cols-2 lg:grid lg:grid-cols-3 gap-x-0">
         <section class="">
             <h2 class="pb-2 text-esiorange text-3xl font-bold">MENU</h2>
@@ -40,9 +40,12 @@
                 </a>
                 <div class="py-2"></div>
                 <a href="https://x.com/esiwama" target="_blank" aria-label="social link" class="block">
-                    <svg class="h-8 w-8 fill-white" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799"><path fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"/></svg>                            
+                    <svg class="h-8 w-8 fill-gray-900" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 462.799"><path fill-rule="nonzero" d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z"/></svg>                            
                 </a>
             </div>
+            
+            <p class="hidden lg:block pt-8">Registration No. 80034499070726.</p>
+
 
         </section>
         <section class="">
@@ -51,7 +54,7 @@
             <p>info@esiwamagroup.com</p>
             <p>esiwama@gmail.com</p>
 
-            <div class="py-4">
+            <div class="py-4 lg:py-8">
                 <h2 class="py-2 font-bold">Call</h2>
                 <p>+256 394-500-842,</p>
                 <p>+256 782-383-300</p>
@@ -59,8 +62,8 @@
 
            
             <h2 class="py-2 font-bold">Location</h2>
-            <p class="lg:hidden">Entebbe Road, Zana-Lufuka Zone Opp. Blue Star Express Hotel, P.O.Box 30084 Kampala, Uganda</p>
-            <p class="hidden lg:block">Entebbe Road, Zana-Lufuka Zone <br> Opp. Blue Star Express Hotel, P.O.Box 30084<br> Kampala, Uganda</p>
+            <p class="lg:hidden">Plot 715 Bombo Road, Makerere -Kavule. Kampala, Uganda</p>
+            <p class="hidden lg:block">Plot 715 Bombo Road, Makerere -Kavule. Kampala, Uganda</p>
 
 
         </section>
@@ -68,8 +71,8 @@
             <h2 class="pb-2 text-esiorange text-3xl font-bold">REQUEST QUOTE</h2>
             <form action="/" class="py-8">
                 <!-- <label for="quoteemail" class=""> -->
-                    <input id="quoteemail" type="email" placeholder="Enter Your Email" class="w-full py-4 px-4 bg-white rounded-2xl text-gray-600 placeholder:text-gray-400 foucs: outline-none">
-                    <button class="my-4 py-4 block w-full text-center bg-esiorange uppercase rounded-2xl cursor-pointer">Submit</button>
+                    <input id="quoteemail" type="email" placeholder="Enter Your Email" class="w-full py-4 px-4 bg-white rounded-2xl text-gray-600 placeholder:text-gray-400 foucs: outline-none border border-gray-400">
+                    <button class="my-4 py-4 block w-full text-center text-white bg-esiorange uppercase rounded-2xl cursor-pointer">Submit</button>
                     <!-- </label> -->
             </form>
             <p class="mt-10 px-4 py-4 text-esiorange">{`© ESIWAMA Consults Limited ${currentyear}. All rights reserved`}</p>
@@ -77,5 +80,6 @@
         </section>
 
     </div>
+    <p class="px-6 pt-4 lg:hidden">Registration No. 80034499070726.</p>
     <p class="px-4 py-4 lg:hidden">{`© ESIWAMA Consults Limited ${currentyear}. All rights reserved`}</p>
 </footer>

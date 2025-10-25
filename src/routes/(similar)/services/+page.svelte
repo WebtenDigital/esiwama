@@ -27,7 +27,7 @@
             description: "We deliver end-to-end infrastructure solutions, from concept to completion, ensuring technical excellence and long-term value.",
             imageurl: tractor,
             details: ["Architecture", "Surveying & Land Mapping", "Hydrology & Geotechnical Studies", "Operation & Maintenance Support", "Traffic Impact Assessments", "Occupational Health & Safety", "Detailed Design & Supervision"],
-            extra: "" 
+            extra: "icon" 
         },
         {
             title: "Environmental & Natural Resource Management",
@@ -35,7 +35,7 @@
             description: "We protect ecosystems while enabling development through sustainable resource management practices.",
             imageurl: environment,
             details: ["Environmental & Social Impact Assessments (ESIA)", "Management Plans & Frameworks", "Risk Assessments & Compliance Audits", "Biodiversity & Ecosystem Studies", "Climate Change Strategies", "Life Cycle Assessments & Waste Management"],
-            extra: "cta" 
+            extra: "icon" 
         },
         {
             title: "Economic & Social Development Consulting",
@@ -51,7 +51,7 @@
             description: "We apply integrated approaches to water, land, and agricultural development for resilient livelihoods.",
             imageurl: water,
             details: ["Water Resource Assessment", "Catchment & Source Protection", "Wastewater Solutions", "Urban & Physical Planning", "Livestock & Rangeland Management"],
-            extra: "cta" 
+            extra: "icon" 
         }
     ]
 </script>
@@ -74,7 +74,7 @@
                     <div class="py-4"><img src={serviceitem.imageurl} alt={serviceitem.title} class="h-36 w-full rounded-2xl shadow-xl lg:shadow-2xl"></div>
                     <div class="bg-esigreen text-white text-sm rounded-3xl shadow-xl lg:shadow-4xl">
                         <div class="w-10/12 mx-auto py-4">
-                            <h3>DETAILS</h3>
+                            <h3 class="font-semibold">OVERVIEW</h3>
                             <div class="">
                                 {#each serviceitem.details as detail}
                                     <p class="py-2">{detail}</p>
@@ -109,7 +109,7 @@
                     <div class=""><img src={serviceitem.imageurl} alt={serviceitem.title} class="h-full object-cover rounded-4xl shadow-xl lg:shadow-4xl"></div>
                     
                     <div id="details" class="col-span-2 py-8 text-white bg-esigreen rounded-4xl shadow-lg lg:shadow-4xl">
-                        <p class="w-10/12 mx-auto font-semibold">DETAILS</p>
+                        <p class="w-10/12 mx-auto font-semibold">OVERVIEW</p>
                         <div class="w-10/12 mx-auto grid grid-cols-2 gap-x-8">
                             {#each serviceitem.details as detail}
                                 <p class="py-2">{detail}</p>
@@ -132,7 +132,7 @@
                 <!-- <Heading text="Partner With Us"/> -->
                 <h4 class="text-lg lg:py-2">Ready to build a lasting impact?</h4>
                 <p class="py-5 lg:py-8">ESIWAMA is your trusted partner for sustainable solutions that drive progress and create value.</p>
-                <CTA url="/contact" text="get in touch" bgcolor="white" textcolor="esiorange"/>
+                <CTA url="/contact" text="get in touch" bgcolor="esiorange" textcolor="white"/>
             </div>
         </div>
 

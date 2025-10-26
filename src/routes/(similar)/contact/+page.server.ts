@@ -25,7 +25,7 @@ export const actions:Actions = {
         const transporter=nodeMailer.createTransport({
             host: SMTP_HOST,
             port: 465,
-            secure: false,
+            secure: true,
             auth: {
                 user: SENDER_EMAIL,
                 pass: SENDER_PWD
@@ -34,9 +34,11 @@ export const actions:Actions = {
 
         //2. create message
         const html=`
+        <br>
         <div>Sender Email: ${email}</div>
-        <div>The Message:</div>
-        <div>${message}</div>
+        <br>
+        <div>The Message: ${message}</div>
+        <br>
         `
         
         const sendmail=await transporter.sendMail({
@@ -46,13 +48,8 @@ export const actions:Actions = {
             html: html
         });
 
-        if(sendmail.rejected){
-            console.log(`Message not sent: `, sendmail.messageId);
-        }
-        else{
-            console.log(`Message Sent: `, sendmail.messageId)
+        console.log(`Message Sent: `, sendmail.messageId)
 
-            return redirect(302, "/thanks");
-        }
+        return redirect(302, "/thanks");
     }
 }

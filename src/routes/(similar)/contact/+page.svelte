@@ -85,6 +85,7 @@
                 <div class="w-11/12 mx-auto lg:col-span-2 lg:w-10/12">
                     <p class="px-2 py-6">Send us an email</p>
                     <div class="py-1"></div>
+                   
                     <form method="POST" class="">
                         <input name="email" type="text" placeholder="Enter Your Email" class="w-full px-4 py-4 text-gray-700 placeholder:text-gray-400 bg-white rounded-2xl focus:outline-none"/>
                         <div class="py-4"></div>
@@ -92,6 +93,7 @@
                         <div class="py-2"></div>
                         <button type="submit" class="block w-full py-3 bg-white text-esiblue text-center uppercase rounded-2xl cursor-pointer hover:text-white hover:bg-blue-400">Submit</button>
                     </form>
+                    
                 </div>
             </div>
         </section>

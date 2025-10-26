@@ -86,7 +86,7 @@
                     <p class="px-2 py-6">Send us an email</p>
                     <div class="py-1"></div>
                    
-                    <form method="POST" class="">
+                    <form action="/contact?/contactform" method="POST" class="">
                         <input name="email" type="text" placeholder="Enter Your Email" class="w-full px-4 py-4 text-gray-700 placeholder:text-gray-400 bg-white rounded-2xl focus:outline-none"/>
                         <div class="py-4"></div>
                         <textarea name="message" id="" rows="10" placeholder="Type your message here..." class="w-full pt-8 px-4 text-gray-700 bg-white rounded-4xl focus:outline-none"></textarea>

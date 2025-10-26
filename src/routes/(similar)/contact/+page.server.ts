@@ -11,7 +11,7 @@ import { RECEIVER_EMAIL, SENDER_EMAIL, SENDER_PWD, SMTP_HOST, SMTP_PORT } from "
  */
 
 export const actions:Actions = {
-    default: async({request})=>{
+    contactform: async({request})=>{
         const formdata = await request.formData();
         const email = formdata.get("email");
         const message = formdata.get("message");
@@ -35,9 +35,48 @@ export const actions:Actions = {
         //2. create message
         const html=`
         <br>
+        <p>Form: Contact Form on Contact Us page</p>
+        <br>
         <div>Sender Email: ${email}</div>
         <br>
         <div>The Message: ${message}</div>
+        <br>
+        `
+        
+        const sendmail=await transporter.sendMail({
+            from: SENDER_EMAIL,
+            to: RECEIVER_EMAIL,
+            subject: "New Message from ESIWAMA Website",
+            html: html
+        });
+
+        console.log(`Message Sent: `, sendmail.messageId)
+
+        return redirect(302, "/thanks");
+    },
+    requestquote: async({request})=>{
+    const formdata = await request.formData();
+    const email = formdata.get("email")
+    
+    //1. create transporter
+        const transporter=nodeMailer.createTransport({
+            host: SMTP_HOST,
+            port: 465,
+            secure: true,
+            auth: {
+                user: SENDER_EMAIL,
+                pass: SENDER_PWD
+            }
+        });
+
+        //2. create message
+        const html=`
+        <br>
+        <p>Form: Request Form from Footer</p>
+        <br>
+        <div>Sender Email: ${email}</div>
+        <br>
+        <div>The Message: This person needs a quote for your services. Please send them an email on <${email}>. Cheers.</div>
         <br>
         `
         
@@ -51,5 +90,6 @@ export const actions:Actions = {
         console.log(`Message Sent: `, sendmail.messageId)
 
         return redirect(302, "/thanks");
+
     }
 }

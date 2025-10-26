@@ -69,9 +69,9 @@
         </section>
         <section class="hidden lg:block">
             <h2 class="pb-2 text-esiorange text-3xl font-bold">REQUEST QUOTE</h2>
-            <form action="/" class="py-8">
+            <form action="/contact?/requestquote" method="POST"  class="py-8">
                 <!-- <label for="quoteemail" class=""> -->
-                    <input id="quoteemail" type="email" placeholder="Enter Your Email" class="w-full py-4 px-4 bg-white rounded-2xl text-gray-600 placeholder:text-gray-400 foucs: outline-none border border-gray-400">
+                    <input id="quoteemail" name="email" type="email" placeholder="Enter Your Email" class="w-full py-4 px-4 bg-white rounded-2xl text-gray-600 placeholder:text-gray-400 foucs: outline-none border border-gray-400">
                     <button class="my-4 py-4 block w-full text-center text-white bg-esiorange uppercase rounded-2xl cursor-pointer">Submit</button>
                     <!-- </label> -->
             </form>

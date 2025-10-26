@@ -62,8 +62,8 @@
 
            
             <h2 class="py-2 font-bold">Location</h2>
-            <p class="lg:hidden">Plot 715 Bombo Road, Makerere -Kavule. Kampala, Uganda</p>
-            <p class="hidden lg:block">Plot 715 Bombo Road, Makerere -Kavule. Kampala, Uganda</p>
+            <p class="lg:hidden">Arriva House, Plot 715 Bombo Road, Makerere -Kavule. Kampala, Uganda</p>
+            <p class="hidden lg:block">Arriva House, Plot 715 Bombo Road, Makerere -Kavule. Kampala, Uganda</p>
 
 
         </section>

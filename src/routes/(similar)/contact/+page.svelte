@@ -34,6 +34,8 @@
                     <h4>CONTACTS</h4>
                     <p>+256 394-500-842</p>
                     <p>+256 782-383-300</p>
+                    <p class="hidden lg:block">+256 749 370 050 (WhatsApp)</p>
+                    <p class="lg:hidden text-sm">+256 749 370 050 <br>(WhatsApp)</p>
                 </div>
                 <div id="email" class="">
                     <h4>EMAIL</h4>
